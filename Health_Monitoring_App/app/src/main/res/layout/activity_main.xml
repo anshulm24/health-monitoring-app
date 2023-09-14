@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#010833"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DiaShield"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/symptomsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="92dp"
+        android:text="SYMPTOMS"
+        android:backgroundTint="@color/blue"/>
+
+    <Button
+        android:id="@+id/uploadSignsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsBtn"
+        android:layout_marginTop="70dp"
+        android:text="UPLOAD SIGNS"
+        android:backgroundTint="@color/blue"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="160dp"
+        android:layout_height="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="135dp" />
+
+    <Button
+        android:id="@+id/measureHeartRateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton2"
+        android:layout_marginTop="80dp"
+        android:text="MEASURE HEART RATE"
+        android:backgroundTint="@color/blue"/>
+
+    <TextView
+        android:id="@+id/heartRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/measureHeartRateBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:text="Heart Rate: "
+        android:textColor="#03A9F4"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/measureRespiratoryRateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/measureHeartRateBtn"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/blue"
+        android:text="MEASURE RESPIRATORY RATE" />
+
+    <TextView
+        android:id="@+id/respRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/measureRespiratoryRateBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:text="Respiratory Rate: "
+        android:textColor="#03A9F4"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
